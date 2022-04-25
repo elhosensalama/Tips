@@ -1,0 +1,61 @@
+VARIABLES
+
+    $color-primary: blue;
+    $color-primary-light: rgb(2, 134, 179);
+    $color-primary-dark: darkblue;
+    
+    $color-primary: #55c57a;        (Medium green)
+    $color-primary-light: #7ed56f;  (Light green)
+    $color-primary-dark: #28b485;   (Dark green)
+
+    $color-primary: #4a68ca;        (Medium violate)
+    $color-primary-light: #896af8;      (Light violate)
+    $color-primary-dark: #0748aa;       (Dark violate)
+
+
+    $color-secondary-light: #ffb900 ;
+    $color-secondary-dark: #ff7730 ;
+
+    $color-tertiary-light: #2998ff ;
+    $color-tertiary-dark: #5643fa;
+
+    $color-gary-light-1:#f7f7f7;
+
+    $color-gray-dark: #777;
+    $color-white: #FFF;
+    $color-black:#000;
+
+    dark: #141123
+    blue; #4285F4
+s
+/*          CSS          */
+
+ATRIBUTE OF []
+
+    ^ start with 
+    * contain
+    $ end with
+
+ATRIBUTE COLOR
+
+    currentColor ==> inherit color from parent
+
+ATRRIBUTE FLEX BOX 
+
+    container{
+        display:flex;
+        flex-direction: row [row-reverse,column,column-reverse]
+        justify-content: flex-start [flex-end,center,space-between,space-around,space-evenly] (x)
+        align-item: stretch [center,flex-start,flex-end,baseline]
+        align-content: stretch [center,flex-start,flex-end,space-between,space-around,space-evenly] (rows)
+        flex-wrap: nowrap [wrap]
+
+        item{
+            align-self: stretch [center,flex-start,flex-end,baseline]
+            order: 0 by default
+            flex-grow: 0 by default
+            flex-basis: auto [x%] (width)
+            flex-shrink:1 by default [0 => no-shrink]
+            flex: grow shrink basis; (short hand)
+        }
+    }

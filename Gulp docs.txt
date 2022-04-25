@@ -1,0 +1,50 @@
+0) require
+    const gulp = require('gulp');
+    const concat = require('gulp-concat');
+    const prefix = require('gulp-autoprefixer');
+    const sass = require('gulp-sass')(require('sass'));
+    const sourcemaps = require('gulp-sourcemaps');
+    const notify = require('gulp-notify');
+    const ftp = require('vinyl-ftp');
+
+1) gulp.src()
+ 
+   *.html for all html files
+   *.* for all files
+   ['index.html','main.css'] 
+
+
+2) gulp.pipe()
+   
+   .pipe(elhosenMinfy())
+   .pipe(elhosenRename())
+
+
+3) gulp.dest()
+ 
+   .pipe(gulp.dest('dist'));
+
+4) concat()
+   .pipe(concat('final.css'))
+
+5) prefix()
+   .pipe(prefix('last 2 versions'))
+
+6) sourcemaps
+    .pipe(sourcemaps.init())     => after gulp.src
+    .pipe(sourcemaps.write('.')) => before gulp.dest
+
+7) sass()
+   .pipe(sass(''))
+
+8) server
+    require('./server.js') => in the watch task
+
+9) watch() 
+   gulp.watch('files', ['tasks']);
+
+10) uglify()         => to minify js
+    .pipe(uglify())
+
+11)  notify()        => to send notifcation when task is done
+    .pipe(notify("elhosen is done"))

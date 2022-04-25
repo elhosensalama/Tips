@@ -1,0 +1,34 @@
+@ npm installing
+
+	sudo dnf install npm
+	sudo npm install npm-run-all -g
+	sudo npm install postcss-cli -g
+	sudo npm install autoprefixer -g
+	sudo npm install concat -g
+	sudo npm install live-server -g
+	sudo npm install node-sass -g
+
+@ npm start
+	
+	npm init
+	npm run start
+	
+@ npm gulp packeges
+
+	
+	sudo npm install gulp -g
+	sudo npm install gulp-autoprefixer -g
+	sudo npm install gulp-concat -g
+	sudo npm install gulp-connect -g
+	sudo npm install gulp-notify -g
+	sudo npm install gulp-pug -g
+	sudo npm install gulp-rename -g
+	sudo npm install sass -g
+	sudo npm install gulp-sass -g
+	sudo npm install vinyl-ftp -g
+
+@npm node packeges
+
+	sudo npm install express -g
+	sudo npm install nodemon -g
+	sudo npm install superagent -g
