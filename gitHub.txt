@@ -1,0 +1,16 @@
+
+password = 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
+
+echo "# app" >> README.md
+	
+git init -b main
+	
+git add .
+
+git commit -m "first commit"
+
+git remote add origin :
+
+git branch -M main
+
+git push -u origin main
